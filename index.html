@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CR7SIU App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app">
+        <header>
+            <h1>CR7SIU App</h1>
+        </header>
+        <nav>
+            <button id="home-btn">Home</button>
+            <button id="rewards-btn">Rewards</button>
+            <button id="fyi-btn">FYI CR7SIU</button>
+            <button id="improvements-btn">Improvements</button>
+        </nav>
+        <main>
+            <section id="home" class="section">
+                <h2>Home</h2>
+                <div id="login-form">
+                    <label for="username">Enter your username:</label>
+                    <input type="text" id="username" placeholder="Unique Username">
+                    <button id="save-username">Save</button>
+                </div>
+                <p id="greeting" style="display:none;">Welcome, <span id="display-username"></span>!</p>
+                <div id="tap-to-mine" class="circle-container">
+                    <button id="tap-button" class="circle-button">Tap to Mine</button>
+                </div>
+                <p>Points: <span id="points">0</span></p>
+                <p>Coins: <span id="coins">0</span></p>
+                <button id="convert-points">Convert Points to Coins</button>
+            </section>
+            <section id="rewards" class="section hidden">
+                <h2>Rewards</h2>
+                <button id="like-page">Like a Page (+100 Points)</button>
+                <button id="watch-video">Watch a Video (+500 Points)</button>
+            </section>
+            <section id="fyi" class="section hidden">
+                <h2>FYI CR7SIU</h2>
+                <p>Staking options coming soon!</p>
+                <button id="connect-wallet">Connect Wallet</button>
+                <p>Conversion Rate: 5000 CR7SIU Points = 1 Token</p>
+            </section>
+            <section id="improvements" class="section hidden">
+                <h2>Improvements</h2>
+                <div id="attributes"></div>
+            </section>
+        </main>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
